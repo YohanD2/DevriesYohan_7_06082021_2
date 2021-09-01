@@ -47,29 +47,6 @@ export default({
             })
             .then((response) => {
                 this.conversations = response.data;
-
-                //this.conversations = (response.data[0]);
-                /*
-                let conversations = response.data[0];
-                
-                conversations.forEach(conversation => {
-                    let id_user_to = conversation.id_user_to;
-
-                    axios.get("http://localhost:3000/api/user/" + id_user_to, {
-                        headers:{
-                            'Authorization': 'Bearer ' + localStorage.getItem('token')
-                        }
-                    })
-                    .then((response) => {
-                        conversation.email = response.data[0].email;
-                        console.log(response.data[0].email);
-                    }, (err) => {
-                            console.log(err);
-                    })
-                });
-                console.log(conversations);
-            this.conversations = conversations;
-            */
             })
         },
         deleteConversation(idConversation, index) {

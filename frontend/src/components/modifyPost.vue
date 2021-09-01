@@ -69,7 +69,6 @@ export default({
                         }
                     })
                     .then((response) => {
-                        console.log(response.data);
                         let idPost = response.data;
                         this.$router.push('/post/' + idPost);
                     }, (err) => {
@@ -77,7 +76,6 @@ export default({
                     })
 
                 } else {
-                    console.log(title);
                     let data = new FormData();
                     data.append('image', this.selectedFile, this.selectedFile.name)
                     data.append('title', title)

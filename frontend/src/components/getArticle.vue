@@ -80,7 +80,6 @@ export default({
 
                 this.comments.push(comment);
                 this.comment = '';
-               // this.$router.push('/article/' + response.data.id);
 
             }, (err) => {
                 this.error = err.response.data;

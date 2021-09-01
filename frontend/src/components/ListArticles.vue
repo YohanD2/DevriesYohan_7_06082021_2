@@ -148,21 +148,5 @@ export default({
             max-width: 90px;
         }
 
-        .addBtn {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-            height: 45px;
-            width: 45px;
-            background-color:#19233e;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 100%;
-        }
 
-        .addBtn svg {
-            height: 20px;
-            width: 20px;
-        }
 </style>

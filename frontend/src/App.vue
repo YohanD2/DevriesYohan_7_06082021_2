@@ -1,40 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!--
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      -->
     </div>
     <router-view/>
-
-<!--
-    {{ token }}
-    
-    <button @click="change_token('nouveau token')">Add Month</button>
-    -->
   </div>
 </template>
-<script>
-/*
 
-import { mapGetters, mapActions } from "vuex"
-
-export default {
-  
-  computed: {
-    ...mapGetters(["token"]),
-  },
-   
-  methods: {
-    ...mapActions(['change_token'])
-  }
-  
-  
-}
-*/
-
-</script>
 <script>
 
 
