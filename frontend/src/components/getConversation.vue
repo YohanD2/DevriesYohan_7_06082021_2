@@ -19,10 +19,10 @@
         <form @submit.prevent="getFormValues" class="form__message">
             <p class="infoText">Message</p>
             <input v-model="content" name='content' type="text">
-            <label for="avatar">Ajouter une image</label>
+            <label for="file">Ajouter une image</label>
 
             <input ref="inputFile" @change="selectImg" type="file"
-                id="avatar" name="avatar"
+                id="file" name="file"
                 accept="image/png, image/jpeg">
 
             <input type="submit" value="Envoyer">
