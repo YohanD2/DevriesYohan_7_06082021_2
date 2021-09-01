@@ -7,13 +7,13 @@
         <!-- <h1>Modificationn de l'article</h1> -->
         <form @submit.prevent="getFormValues">
             <div class="inputLine">
-                <label  class="infoText">Email de votre correspondant</label>
-                <input name="email" type="email" required>
+                <label for="email" class="infoText">Email de votre correspondant</label>
+                <input name="email" type="email" id="email" required>
             </div>
 
             <div class="inputLine">
-                <label class="infoText" for="story">Vore message</label>
-                <textarea name="content" id="story"
+                <label class="infoText" for="message">Votre message</label>
+                <textarea name="content" id="message"
                         rows="5" cols="33" required>
                 </textarea>
             </div>

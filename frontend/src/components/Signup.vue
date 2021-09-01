@@ -10,13 +10,13 @@
             <h1>Incription</h1>
             <form @submit.prevent="getFormValues">
                 <div class="inputLine">
-                    <label class="infoText">E-mail</label>
-                    <input name="email" type="email" required>
+                    <label for="email" class="infoText">E-mail</label>
+                    <input name="email" id="email" type="email" required>
                 </div>
                 
                 <div class="inputLine">
-                    <label class="infoText">Mot de passe</label>
-                    <input name="password" type="password" required>
+                    <label for="password" class="infoText">Mot de passe</label>
+                    <input name="password" id="password" type="password" required>
                 </div>
                 <div class="inputLine">
                     <input type="submit" value="S'inscrire">

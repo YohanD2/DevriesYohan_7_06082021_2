@@ -18,10 +18,10 @@
             </div>
         </div>
         <form @submit.prevent="getFormValues" class="form__comment">
-            <p class="infoText">Réagir :</p>
+            <label class="infoText" for="file">Réagir :</label>
 
             <input ref="inputFile" @change="selectImg" type="file"
-                id="avatar" name="avatar"
+                id="file" name="file"
                 accept="image/png, image/jpeg" required>
         <input type="submit" value="Réagir">
         </form>

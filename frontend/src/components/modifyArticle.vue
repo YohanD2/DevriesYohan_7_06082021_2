@@ -6,13 +6,13 @@
         <h1>Modification de l'article</h1>
         <form @submit.prevent="getFormValues">
             <div class="inputLine">
-                <label  class="infoText">Titre</label>
-                <input name="title" type="text" :value="article.title" required>
+                <label for="title" class="infoText">Titre</label>
+                <input name="title" type="text" id="title" :value="article.title" required>
             </div>
             
             <div class="inputLine">
-                <label class="infoText" for="story">Contenu de l'article</label>
-                <textarea name="content" id="story" rows="5" cols="33" :value="article.content" required>
+                <label class="infoText" for="article">Contenu de l'article</label>
+                <textarea name="content" id="article" rows="5" cols="33" :value="article.content" required>
                 </textarea>
             </div>
             <div class="inputLine">

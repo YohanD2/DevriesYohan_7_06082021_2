@@ -6,18 +6,18 @@
         <h1>Modification du post</h1>
         <form @submit.prevent="getFormValues">
             <div class="inputLine">
-                <label  class="infoText">Titre</label>
-                <input name="title" type="text" :value="post.title" required>
+                <label for="title" class="infoText">Titre</label>
+                <input name="title" type="text" id="title" :value="post.title" required>
             </div>
 
             <div class="inputLine">
                 <img :src="post.url_img" />
             </div>
 
-            <label for="avatar">Changer l'image</label>
+            <label for="gif">Changer l'image</label>
 
             <input ref="inputFile" @change="selectImg" type="file"
-                id="avatar" name="avatar"
+                id="gif" name="gif"
                 accept="image/png, image/jpeg">
 
             <div class="inputLine">

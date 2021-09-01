@@ -6,14 +6,14 @@
         <h1>Création du post</h1>
         <form @submit.prevent="getFormValues">
             <div class="inputLine">
-                <label  class="infoText">Titre</label>
-                <input name="title" type="text" required>
+                <label for="title" class="infoText">Titre</label>
+                <input name="title" type="text" id="title" required>
             </div>
             
-            <label for="avatar">Ajouter une image</label>
+            <label for="gif">Ajouter une image</label>
 
             <input ref="inputFile" @change="selectImg" type="file"
-                id="avatar" name="avatar"
+                id="gif" name="gif"
                 accept="image/gif" required>
 
             <div class="inputLine">

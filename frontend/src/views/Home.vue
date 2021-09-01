@@ -26,8 +26,8 @@
             <p class="profil__email bold">{{ email }}</p>
         </div>
         <div class="choice__section">
-        <router-link class="signinLink" to="/all-articles"><button>Accèder aux articles</button></router-link>
-        <router-link class="signinLink" to="/all-posts"><button>Accèder aux posts multimédia</button></router-link>
+        <router-link class="pathLink" to="/all-articles"><button>Accèder aux articles</button></router-link>
+        <router-link class="pathLink" to="/all-posts"><button>Accèder aux posts multimédia</button></router-link>
         </div>
     </main>
   </div>
@@ -100,9 +100,10 @@ data() {
 }
   
 .important {
-    color: #FD2D01;
-  }
-.signinLink {
+  color: #FD2D01;
+}
+
+.pathLink {
 color: white;
 width: 100%;
 }

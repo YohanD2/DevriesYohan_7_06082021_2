@@ -10,7 +10,6 @@
         <h2>Commentaires :</h2>
         <div class="comment" v-for="(comment) in comments" v-bind:key="comment.id">
             <div class="comment__header">
-
                 
                 <p>{{ comment.email }}</p>
             </div>
@@ -19,7 +18,7 @@
             </div>
         </div>
         <form @submit.prevent="getFormValues" class="form__comment">
-            <p class="infoText">Commentaire</p>
+            <label class="infoText" for="comment">Commentaire</label>
             <input v-model="comment" name="comment" type="text">
         <input type="submit" value="Poster">
         </form>

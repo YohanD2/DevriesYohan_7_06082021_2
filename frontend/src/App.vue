@@ -115,6 +115,16 @@ export default({
     .signinLink {
         margin-top: 24px;
     }
+    .signinUp {
+        margin-top: 24px;
+    }
+
+    .signinLink:hover, .signinLink:focus {
+        text-decoration: underline;
+    }
+    .signinUp:hover, .signUp:focus {
+        text-decoration: underline;
+    }
 
     .header__homepage {
         width:100%;

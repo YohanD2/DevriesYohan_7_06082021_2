@@ -10,19 +10,19 @@
             <h1>Connexion</h1>
             <form @submit.prevent="getFormValues">
                 <div class="inputLine">
-                    <label class="infoText">E-mail</label>
-                    <input name="email" type="email" required>
+                    <label for="email" class="infoText">E-mail</label>
+                    <input name="email" type="email" id="email" required>
                 </div>
                 
                 <div class="inputLine">
-                    <label class="infoText">Mot de passe</label>
-                    <input name="password" type="password" required>
+                    <label for="password" class="infoText">Mot de passe</label>
+                    <input name="password" type="password" id="password" required>
                 </div>
                 <div class="inputLine">
                     <input type="submit" value="Se connecter">
                 </div>
             </form>
-            <router-link class="signinLink" to="/signup">S'inscrire</router-link>
+            <router-link class="signinUp" to="/signup">S'inscrire</router-link>
         </main>
     </div>
 </template>

@@ -6,13 +6,13 @@
         <h1>Création de l'article</h1>
         <form @submit.prevent="getFormValues">
             <div class="inputLine">
-                <label  class="infoText">Titre</label>
-                <input name="title" type="text" required>
+                <label for="title" class="infoText">Titre</label>
+                <input name="title" type="text" id="title" required>
             </div>
             
             <div class="inputLine">
-                <label class="infoText" for="story">Contenu de l'article</label>
-                <textarea name="content" id="story"
+                <label class="infoText" for="content">Contenu de l'article</label>
+                <textarea name="content" id="content"
                         rows="5" cols="33" required>
                 </textarea>
             </div>
